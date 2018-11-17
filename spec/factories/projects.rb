@@ -25,7 +25,7 @@ FactoryBot.define do
   end
 
   factory :project_due_tomorrow, class: Project do
-    sequence(:name) {|n| "Test Project#{n}" }
+    sequence(:name) { |n| "Test Project#{n}" }
     description "Sample project for testing purposes"
     due_on 1.day.from_now
     association :owner
