@@ -58,6 +58,7 @@ RSpec.configure do |config|
 
   # Use test helpers of Devise on controller spec
   config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::IntegrationHelpers, type: :feature
   config.include RequestSpecHelper, type: :request
   require 'capybara/rspec'
 end
